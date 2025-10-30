@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meme Creator 😎</title>
+  <link rel="stylesheet" href="meme.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Meme Creator</h1>
+    <h2>Select a Template or Upload</h2>
+    <div id="templates" class="templates"></div>
+    <input type="file" id="uploadTemplate" accept="image/*" />
+    <div id="captionBox" class="hidden">
+      <h3>Add Captions</h3>
+      <input type="text" id="topCaptionInput" placeholder="Enter top caption">
+      <input type="text" id="bottomCaptionInput" placeholder="Enter bottom caption">
+      <button id="addMeme">Add Meme</button>
+    </div>
+
+    <h2>Generated Memes</h2>
+    <div id="memes" class="memes"></div>
+  </div>
+
+  <script src="meme.js"></script>
+</body>
+</html>
